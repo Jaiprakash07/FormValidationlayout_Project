@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORM VALIDATION</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link href="form.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1">
+            <form class="formhead" onsubmit="return validateform()">
+                <div class="form">
+                    <h2>FORM</h2>
+                </div>
+                <div class="box1 box">
+                    <div class="names">
+                        <label>Name</label>
+                    </div>
+                    <div class="inputname">
+                        <input type="text" placeholder="John Doe" class="name">
+                    </div>
+                    <div>
+                        <p class="nameerror"></p>
+                    </div>
+                </div>
+                <div class="box2 box">
+                    <div class="emails">
+                        <label>Email</label>
+                    </div>
+                    <div class="inputemail">
+                        <input type="email" placeholder="JohnDoe158@gmail.com" class="email">
+                    </div>
+                    <div>
+                        <p class="emailerror"></p>
+                    </div>
+                </div>
+                <div class="box3 box">
+                    <div class="phones">
+                        <label>Phone</label>
+                    </div>
+                    <div class="inputphone">
+                        <input type="tel" placeholder="9977562222" class="phone" maxlength="10">
+                    </div>
+                    <div>
+                        <p class="phoneerror"></p>
+                    </div>
+                </div>
+                <div class="box4 box">
+                    <div class="address">
+                        <label>Address</label>
+                    </div>
+                    <div class="inputaddress">
+                        <input type="text" placeholder="84,Anand Nagar,Indore" class="add">
+                    </div>
+                    <div>
+                        <p class="adderror"></p>
+                    </div>
+                </div>
+                <div class="box5 box">
+                    <div class="pins">
+                        <label>Pin code</label>
+                    </div>
+                    <div class="inputpin">
+                        <input type="text" placeholder="452001" class="pin" maxlength="6">
+                    </div>
+                    <div>
+                        <p class="pinerror"></p>
+                    </div>
+                </div>
+                <div class="box6 box">
+                    <div class="states">
+                        <label>State</label>
+                    </div>
+                    <div class="inputstate">
+                        <input type="text" placeholder="Madhya Pradesh" class="state">
+                    </div>
+                    <div>
+                        <p class="stateerror"></p>
+                    </div>
+                </div>
+                <div class="box7 box">
+                    <div class="inputradio">
+                        <input type="radio" name="gender" class="gender" required>
+                        <label>Male</label>
+                    </div>
+                    <div class="inputradio">
+                        <input type="radio" name="gender" class="gender" required>
+                        <label>Female</label>
+                    </div>
+                    <div>
+                        <p class="radioerror"></p>
+                    </div>
+                </div>
+                <div class="box8 box">
+                    <div class="passs">
+                        <label>Password</label>
+                    </div>
+                    <div class="passed">
+                        <input type="password" placeholder="Johndoe@158" class="pass">
+                    </div>
+                    <div>
+                        <p class="passerror"></p>
+                    </div>
+                </div>
+                <div class="box9 box">
+                    <div class="inputcheck">
+                        <input type="checkbox" class="check" required>
+                        <label>I agree with term and conditions</label>
+                    </div>
+                    <div>
+                        <p class="checkerror"></p>
+                    </div>
+                </div>
+                <div class="box10 box">
+                    <input type="submit">
+                </div>
+
+            </form>
+        </div>
+        <div></div>
+    </div>
+    <script src="form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+        integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+</body>
+
+</html>
